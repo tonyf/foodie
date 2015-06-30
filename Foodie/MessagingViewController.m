@@ -13,6 +13,7 @@
 #import "JSQMessagesAvatarImageFactory.h"
 #import "JSQMessagesCollectionViewCell.h"
 #import "Message.h"
+#import "SpexViewController.h"
 #import "User.h"
 
 #define FIREBASE_URL @"https://foodie-app.firebaseio.com"
@@ -192,6 +193,15 @@
     }
     
     return kJSQMessagesCollectionViewCellLabelHeightDefault;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"openRestNav"]) {
+        UINavigationController *nav = (UINavigationController *) [segue destinationViewController];
+        SpexViewController *spex = (SpexViewController *) nav.viewControllers[0];
+        spex.groupID = self.groupId;
+    }
+    
 }
 
 @end

@@ -12,6 +12,7 @@
 #import <MapKit/MapKit.h>
 #import "Yelp.h"
 #import "YelpAPI.h"
+#import <Firebase/Firebase.h>
 
 
 @interface RandomRestaurantViewController ()
@@ -92,6 +93,15 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)saveButtonPressed:(id)sender {
+    [self saveRest];
+}
+
+- (void)saveRest {
+    Firebase *ref = [[Firebase alloc] initWithUrl:[NSString stringWithFormat:@"https://foodie-app.firebaseio.com/groups/%@", self.groupID]];
+    
 }
 
 /*

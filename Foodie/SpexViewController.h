@@ -11,4 +11,6 @@
 
 @interface SpexViewController : ModalTableViewController <MKMapViewDelegate>
 
+@property (nonatomic, strong) NSString *groupID;
+
 @end

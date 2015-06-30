@@ -22,7 +22,14 @@
 
 @implementation SpexViewController
 
-
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super initWithCoder:aDecoder]) {
+        CLLocationManager *locManager = [[CLLocationManager alloc] init];
+        [locManager requestWhenInUseAuthorization];
+        [locManager startUpdatingLocation];
+    }
+    return self;
+}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     self.navigationItem.title = @"";
@@ -39,9 +46,10 @@
     NSString *term = @"dinner";
     NSString *location = self.location;
     
+    
     if ([segue.identifier isEqualToString:@"yelpSegue"]) {
         //self.navigationController.topViewController = destVC;
-
+        destVC.groupID = self.groupID;
         YelpAPI *API = [[YelpAPI alloc] init];
         dispatch_group_t requestGroup = dispatch_group_create();
         
@@ -69,6 +77,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     // Do any additional setup after loading the view.
     self.map.showsUserLocation = YES;
     self.map.delegate = self;

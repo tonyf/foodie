@@ -13,7 +13,8 @@
 - (id)initWithName: (NSString *)name
            address: (NSString *)address
        ratingImage: (NSString *) ratingImage
-           cuisine: (NSString *) cuisine {
+           cuisine: (NSString *) cuisine
+        businessID: (NSString *) businessID {
     
     self = [super init];
     
@@ -22,6 +23,7 @@
         self.address = address;
         self.ratingImage = ratingImage;
         self.cuisine = cuisine;
+        self.businessID = businessID;
     }
     return self;
 

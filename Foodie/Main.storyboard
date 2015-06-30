@@ -38,7 +38,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Mh5-GW-nYx">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="5WJ-hf-Sge" kind="show" identifier="make" id="wk5-A2-l91"/>
+                                <segue destination="LEv-7b-HKD" kind="show" identifier="make" id="Tvk-5N-Bmx"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -78,7 +78,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="Uib-iF-LdS">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="gKI-4T-X4v" kind="presentation" id="7cV-ez-AUA"/>
+                                <segue destination="gKI-4T-X4v" kind="presentation" identifier="openRestNav" id="7cV-ez-AUA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -299,7 +299,14 @@
                             <outlet property="delegate" destination="geL-bu-DDU" id="CcO-jg-QWp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="cAC-mg-cI3"/>
+                    <navigationItem key="navigationItem" id="cAC-mg-cI3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Ee9-1f-cJX">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="geL-bu-DDU" id="qkN-Sy-dAN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="cuisineType" destination="S9p-Hq-8kZ" id="kZe-Rc-pht"/>
@@ -374,7 +381,7 @@
         <!--Add Friends-->
         <scene sceneID="UeC-f6-kjM">
             <objects>
-                <tableViewController id="5WJ-hf-Sge" customClass="ModalTableViewController" sceneMemberID="viewController">
+                <tableViewController id="5WJ-hf-Sge" customClass="MakeGroupTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="uk6-2W-Dly">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -383,9 +390,6 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
-                            <connections>
-                                <outlet property="delegate" destination="5WJ-hf-Sge" id="3eA-en-gA7"/>
-                            </connections>
                         </searchBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3Mw-Hh-6BF">
@@ -397,8 +401,7 @@
                         </prototypes>
                         <sections/>
                         <connections>
-                            <outlet property="dataSource" destination="5WJ-hf-Sge" id="fhA-gd-CdX"/>
-                            <outlet property="delegate" destination="5WJ-hf-Sge" id="plM-oJ-EYF"/>
+                            <outlet property="delegate" destination="5WJ-hf-Sge" id="AUG-mv-RGo"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Add Friends" id="NkD-Tk-IQ0">
@@ -418,15 +421,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f2N-wc-H6u" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <searchDisplayController id="AaK-8x-A5z">
                     <connections>
-                        <outlet property="delegate" destination="5WJ-hf-Sge" id="iL1-gn-d83"/>
                         <outlet property="searchBar" destination="tjJ-Pi-Vqq" id="MAE-Oq-uWU"/>
-                        <outlet property="searchContentsController" destination="5WJ-hf-Sge" id="6sf-vj-C7v"/>
-                        <outlet property="searchResultsDataSource" destination="5WJ-hf-Sge" id="g0F-3O-vDf"/>
-                        <outlet property="searchResultsDelegate" destination="5WJ-hf-Sge" id="wpl-sS-xZr"/>
                     </connections>
                 </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1053.5" y="-1247.5"/>
+        </scene>
+        <!--Make Group Table View Controller-->
+        <scene sceneID="7y7-nb-wRL">
+            <objects>
+                <tableViewController id="LEv-7b-HKD" customClass="MakeGroupTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="QHa-4h-Xtr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Xxh-Sd-ItH">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xxh-Sd-ItH" id="GWL-TD-xda">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LEv-7b-HKD" id="WKC-dS-fLf"/>
+                            <outlet property="delegate" destination="LEv-7b-HKD" id="i2p-XB-4wS"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ta4-eW-hbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1614" y="-1273"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OXL-oT-WQf">

@@ -78,10 +78,12 @@
 		B175E3F81B4219E300800DE3 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B175E3F71B4219E300800DE3 /* FBSDKCoreKit.framework */; };
 		B175E3FA1B4219EB00800DE3 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B175E3F91B4219EB00800DE3 /* FBSDKLoginKit.framework */; };
 		B175E4031B425F7F00800DE3 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B175E4021B425F7F00800DE3 /* User.m */; };
+		B1F2B4601B435CF700469721 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1F2B45F1B435CF700469721 /* Images.xcassets */; };
+		B1F2B4671B435D8F00469721 /* Icon-60@180.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F2B4651B435D8F00469721 /* Icon-60@180.png */; };
+		B1F2B4681B435D8F00469721 /* Icon-60@120.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F2B4661B435D8F00469721 /* Icon-60@120.png */; };
 		BAF482B01B3DE9060024636B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF482AF1B3DE9060024636B /* main.m */; };
 		BAF482B31B3DE9060024636B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF482B21B3DE9060024636B /* AppDelegate.m */; };
 		BAF482B61B3DE9060024636B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF482B51B3DE9060024636B /* ViewController.m */; };
-		BAF482BB1B3DE9060024636B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF482BA1B3DE9060024636B /* Images.xcassets */; };
 		BAF482BE1B3DE9060024636B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF482BC1B3DE9060024636B /* LaunchScreen.xib */; };
 		BAF482CA1B3DE9070024636B /* FoodieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF482C91B3DE9070024636B /* FoodieTests.m */; };
 		BAF482D41B3DECA00024636B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF482D31B3DECA00024636B /* MapKit.framework */; };
@@ -230,6 +232,9 @@
 		B175E3F91B4219EB00800DE3 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		B175E4011B425F7F00800DE3 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		B175E4021B425F7F00800DE3 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		B1F2B45F1B435CF700469721 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B1F2B4651B435D8F00469721 /* Icon-60@180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@180.png"; sourceTree = "<group>"; };
+		B1F2B4661B435D8F00469721 /* Icon-60@120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@120.png"; sourceTree = "<group>"; };
 		BAF482AA1B3DE9060024636B /* Foodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF482AE1B3DE9060024636B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAF482AF1B3DE9060024636B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -237,7 +242,6 @@
 		BAF482B21B3DE9060024636B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BAF482B41B3DE9060024636B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BAF482B51B3DE9060024636B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		BAF482BA1B3DE9060024636B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BAF482BD1B3DE9060024636B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BAF482C31B3DE9060024636B /* FoodieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF482C81B3DE9060024636B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -522,7 +526,7 @@
 				BAF482B21B3DE9060024636B /* AppDelegate.m */,
 				BAF482B41B3DE9060024636B /* ViewController.h */,
 				BAF482B51B3DE9060024636B /* ViewController.m */,
-				BAF482BA1B3DE9060024636B /* Images.xcassets */,
+				B1F2B45F1B435CF700469721 /* Images.xcassets */,
 				BAF482BC1B3DE9060024636B /* LaunchScreen.xib */,
 				BAF482AD1B3DE9060024636B /* Supporting Files */,
 			);
@@ -532,6 +536,8 @@
 		BAF482AD1B3DE9060024636B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B1F2B4651B435D8F00469721 /* Icon-60@180.png */,
+				B1F2B4661B435D8F00469721 /* Icon-60@120.png */,
 				BAF482AE1B3DE9060024636B /* Info.plist */,
 				BAF482AF1B3DE9060024636B /* main.m */,
 			);
@@ -604,7 +610,6 @@
 				TargetAttributes = {
 					BAF482A91B3DE9060024636B = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = G5G8URK4Q6;
 					};
 					BAF482C21B3DE9060024636B = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -640,9 +645,11 @@
 				B14C71381B41CA300098257A /* JSQMessagesAssets.bundle in Resources */,
 				BAF482BE1B3DE9060024636B /* LaunchScreen.xib in Resources */,
 				B14C715D1B41CA300098257A /* JSQMessagesLoadEarlierHeaderView.xib in Resources */,
+				B1F2B4601B435CF700469721 /* Images.xcassets in Resources */,
 				B14C71581B41CA300098257A /* JSQMessagesCollectionViewCellOutgoing.xib in Resources */,
 				B15C3ECA1B434D1000828803 /* Main.storyboard in Resources */,
-				BAF482BB1B3DE9060024636B /* Images.xcassets in Resources */,
+				B1F2B4681B435D8F00469721 /* Icon-60@120.png in Resources */,
+				B1F2B4671B435D8F00469721 /* Icon-60@180.png in Resources */,
 				B14C71421B41CA300098257A /* JSQMessagesViewController.xib in Resources */,
 				B14C71761B41CA740098257A /* Info.plist in Resources */,
 				B14C71561B41CA300098257A /* JSQMessagesCollectionViewCellIncoming.xib in Resources */,

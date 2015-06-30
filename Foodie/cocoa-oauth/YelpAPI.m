@@ -70,6 +70,7 @@ static NSString * const kSearchLimit       = @"20";
                           businessResponseJSON[@"location"][@"city"]];
             yp.ratingImage = businessResponseJSON[@"rating_img_url"];
             yp.cuisine = [[businessResponseJSON[@"categories"] objectAtIndex:0] objectAtIndex:0];
+            yp.businessID = businessID;
             
             completionHandler(yp, error);
             

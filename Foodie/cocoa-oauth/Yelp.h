@@ -15,10 +15,12 @@
 @property (strong, nonatomic) NSString *address;
 @property (strong, nonatomic) NSString *ratingImage;
 @property (strong, nonatomic) NSString *cuisine;
+@property (strong, nonatomic) NSString *businessID;
 
 - (id)initWithName: (NSString *) name
            address: (NSString *) address
        ratingImage: (NSString *) ratingImage
-           cuisine: (NSString *) cuisine;
+           cuisine: (NSString *) cuisine
+        businessID: (NSString *) businessID;
 
 @end
