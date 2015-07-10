@@ -20,8 +20,6 @@ static NSString * const kSearchLimit       = @"20";
 
 - (void)queryRandomBusinessInfoForTerm:(NSString *)term location:(NSString *)location completionHandler:(void (^)(Yelp *yp, NSError *error))completionHandler {
     
-    NSLog(@"Querying the Search API with term \'%@\' and location \'%@'", term, location);
-    
     //Make a first request to get the search results with the passed term and location
     NSURLRequest *searchRequest = [self _searchRequestWithTerm:term location:location];
     NSURLSession *session = [NSURLSession sharedSession];
@@ -38,7 +36,6 @@ static NSString * const kSearchLimit       = @"20";
                 NSUInteger randomIndex = arc4random() % [businessArray count];
                 NSDictionary *business = [businessArray objectAtIndex:randomIndex];
                 NSString *businessID = business[@"id"];
-                NSLog(@"%lu businesses found, querying business info for the random result: %@", (unsigned long)[businessArray count], businessID);
                 
                 [self queryBusinessInfoForBusinessId:businessID completionHandler:completionHandler];
                 

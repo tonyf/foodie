@@ -60,7 +60,6 @@
                 NSLog(@"An error happened during the request: %@", error);
             } else if (yp) {
                 destVC.address = yp.address;
-                NSLog(@"%@", destVC.address);
                 destVC.name = yp.name;
                 destVC.ratingImage = yp.ratingImage;
                 destVC.userLocation = self.userLocation;
@@ -89,10 +88,7 @@
     if(self.loops >= 2) {
         return;
     }
-    
-    NSLog(@"%f", self.map.userLocation.location.coordinate.latitude);
-    NSLog(@"%f", self.map.userLocation.location.coordinate.longitude);
-    
+
     self.userLocation = self.map.userLocation.location;
     MKCoordinateRegion mapRegion;
     mapRegion.center = self.userLocation.coordinate;
