@@ -18,6 +18,8 @@
 @property (nonatomic) CLLocation *userLocation;
 @property (strong, nonatomic) IBOutlet UITextField *cuisineLabel;
 @property (nonatomic, strong) NSString *location;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *distanceSegment;
+@property (nonatomic) int distanceMeters;
 
 @end
 
@@ -48,7 +50,15 @@
     if(![self.cuisineLabel.text isEqualToString:@""]) {
         term = self.cuisineLabel.text;
     }
-    NSLog(@"The Cuisine is %@", term);
+    
+    if(self.distanceSegment.selectedSegmentIndex == 0) {
+        self.distanceMeters = 1000;
+    } else if(self.distanceSegment.selectedSegmentIndex == 1) {
+        self.distanceMeters = 5000;
+    } else {
+        self.distanceMeters = 10000;
+    }
+    
     NSString *location = self.location;
     
     
