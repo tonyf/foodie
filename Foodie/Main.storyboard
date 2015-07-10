@@ -320,6 +320,7 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="saveButtonPressed:" destination="geL-bu-DDU" id="qkN-Sy-dAN"/>
+                                <segue destination="rhs-Hb-5RB" kind="show" id="EJv-gG-Y2K"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -356,21 +357,10 @@
                                     <action selector="loginPressed:" destination="y29-E3-l1e" eventType="touchUpInside" id="tx7-zF-Svx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1s-BL-iCY">
-                                <rect key="frame" x="206" y="323" width="189" height="30"/>
-                                <state key="normal" title="Continue without Facebook">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="gKI-4T-X4v" kind="show" id="hYG-7G-yUO"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="wYR-mj-fW5" secondAttribute="centerX" constant="4" id="9r5-qg-KHF"/>
-                            <constraint firstItem="e1s-BL-iCY" firstAttribute="centerX" secondItem="wYR-mj-fW5" secondAttribute="centerX" constant="4.5" id="aXK-sO-nNT"/>
-                            <constraint firstItem="e1s-BL-iCY" firstAttribute="top" secondItem="wYR-mj-fW5" secondAttribute="bottom" constant="8" id="nuy-pK-bNG"/>
                             <constraint firstAttribute="centerY" secondItem="wYR-mj-fW5" secondAttribute="centerY" id="w2g-De-6pr"/>
                         </constraints>
                     </view>
@@ -459,7 +449,7 @@
             <objects>
                 <tableViewController id="LEv-7b-HKD" customClass="MakeGroupTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="QHa-4h-Xtr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -506,6 +496,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="EJv-gG-Y2K"/>
         <segue reference="7vJ-0Q-3Lo"/>
         <segue reference="diL-87-3c3"/>
     </inferredMetricsTieBreakers>

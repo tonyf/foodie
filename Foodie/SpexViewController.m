@@ -45,9 +45,10 @@
     self.map.showsUserLocation = NO;
     
     NSString *term = @"Dinner";
-    if(self.cuisineLabel.text) {
+    if(![self.cuisineLabel.text isEqualToString:@""]) {
         term = self.cuisineLabel.text;
     }
+    NSLog(@"The Cuisine is %@", term);
     NSString *location = self.location;
     
     

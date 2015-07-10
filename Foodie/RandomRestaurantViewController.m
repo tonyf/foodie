@@ -96,7 +96,8 @@
 }
 
 - (IBAction)saveButtonPressed:(id)sender {
-    [self saveRest];
+    //[self saveRest];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)saveRest {

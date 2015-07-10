@@ -315,8 +315,8 @@
 			children = (
 				B15C3EB01B434CAD00828803 /* ModalTableViewController.h */,
 				B15C3EB11B434CAD00828803 /* ModalTableViewController.m */,
-				B15C3EA81B434CA700828803 /* RandomRestaurantViewController.m */,
 				B15C3EB21B434CAD00828803 /* RandomRestaurantViewController.h */,
+				B15C3EA81B434CA700828803 /* RandomRestaurantViewController.m */,
 				B15C3EA91B434CA700828803 /* SpexViewController.h */,
 				B15C3EAA1B434CA700828803 /* SpexViewController.m */,
 				B157F8251B42F8C7005CEF29 /* LoginViewController.h */,
