@@ -136,16 +136,16 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rating:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOH-s1-aJz">
-                                                    <rect key="frame" x="20" y="52" width="55" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cuisine:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOH-s1-aJz">
+                                                    <rect key="frame" x="20" y="52" width="62" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qrn-c7-frv">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Default: Dinner" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qrn-c7-frv">
                                                     <rect key="frame" x="105" y="48" width="247" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -189,6 +189,7 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="cuisineLabel" destination="qrn-c7-frv" id="aVZ-Bn-e2L"/>
                         <outlet property="map" destination="k5q-b6-Xc5" id="o3E-17-Hfz"/>
                     </connections>
                 </tableViewController>
@@ -355,10 +356,21 @@
                                     <action selector="loginPressed:" destination="y29-E3-l1e" eventType="touchUpInside" id="tx7-zF-Svx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1s-BL-iCY">
+                                <rect key="frame" x="206" y="323" width="189" height="30"/>
+                                <state key="normal" title="Continue without Facebook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gKI-4T-X4v" kind="show" id="hYG-7G-yUO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="wYR-mj-fW5" secondAttribute="centerX" constant="4" id="9r5-qg-KHF"/>
+                            <constraint firstItem="e1s-BL-iCY" firstAttribute="centerX" secondItem="wYR-mj-fW5" secondAttribute="centerX" constant="4.5" id="aXK-sO-nNT"/>
+                            <constraint firstItem="e1s-BL-iCY" firstAttribute="top" secondItem="wYR-mj-fW5" secondAttribute="bottom" constant="8" id="nuy-pK-bNG"/>
                             <constraint firstAttribute="centerY" secondItem="wYR-mj-fW5" secondAttribute="centerY" id="w2g-De-6pr"/>
                         </constraints>
                     </view>

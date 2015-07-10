@@ -16,6 +16,7 @@
 @property (nonatomic) IBOutlet MKMapView *map;
 @property (nonatomic) int loops;
 @property (nonatomic) CLLocation *userLocation;
+@property (strong, nonatomic) IBOutlet UITextField *cuisineLabel;
 @property (nonatomic, strong) NSString *location;
 
 @end
@@ -43,7 +44,10 @@
     RandomRestaurantViewController *destVC = segue.destinationViewController;
     self.map.showsUserLocation = NO;
     
-    NSString *term = @"dinner";
+    NSString *term = @"Dinner";
+    if(self.cuisineLabel.text) {
+        term = self.cuisineLabel.text;
+    }
     NSString *location = self.location;
     
     
@@ -51,9 +55,7 @@
         //self.navigationController.topViewController = destVC;
         destVC.groupID = self.groupID;
         YelpAPI *API = [[YelpAPI alloc] init];
-        dispatch_group_t requestGroup = dispatch_group_create();
         
-        dispatch_group_enter(requestGroup);
         [API queryRandomBusinessInfoForTerm:term location:location completionHandler:^(Yelp *yp, NSError *error) {
             
             if (error) {
@@ -69,7 +71,6 @@
             } else {
                 NSLog(@"No business was found");
             }
-            dispatch_group_leave(requestGroup);
         }];
     }
 }
@@ -82,6 +83,9 @@
     self.map.delegate = self;
 
     self.loops = 0;
+    
+    [self.cuisineLabel addTarget:nil action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
+
 }
 
 -(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
