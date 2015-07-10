@@ -35,6 +35,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Groups" id="8pe-1U-ei0">
+                        <barButtonItem key="leftBarButtonItem" title="Skip" id="TIM-iU-vpp">
+                            <connections>
+                                <segue destination="gKI-4T-X4v" kind="show" id="7vJ-0Q-3Lo"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Mh5-GW-nYx">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -479,6 +484,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="7vJ-0Q-3Lo"/>
         <segue reference="diL-87-3c3"/>
     </inferredMetricsTieBreakers>
 </document>

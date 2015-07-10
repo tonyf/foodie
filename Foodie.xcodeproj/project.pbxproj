@@ -66,7 +66,6 @@
 		B157F8321B431E42005CEF29 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = B157F82F1B431E42005CEF29 /* Group.m */; };
 		B15C3EAD1B434CA700828803 /* RandomRestaurantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C3EA81B434CA700828803 /* RandomRestaurantViewController.m */; };
 		B15C3EAE1B434CA700828803 /* SpexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C3EAA1B434CA700828803 /* SpexViewController.m */; };
-		B15C3EAF1B434CA700828803 /* WhiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C3EAC1B434CA700828803 /* WhiteViewController.m */; };
 		B15C3EB31B434CAD00828803 /* ModalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C3EB11B434CAD00828803 /* ModalTableViewController.m */; };
 		B15C3EBF1B434CB100828803 /* GCOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C3EB61B434CB100828803 /* GCOAuth.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B15C3EC01B434CB100828803 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C3EB81B434CB100828803 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -83,7 +82,6 @@
 		B1F2B4681B435D8F00469721 /* Icon-60@120.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F2B4661B435D8F00469721 /* Icon-60@120.png */; };
 		BAF482B01B3DE9060024636B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF482AF1B3DE9060024636B /* main.m */; };
 		BAF482B31B3DE9060024636B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF482B21B3DE9060024636B /* AppDelegate.m */; };
-		BAF482B61B3DE9060024636B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF482B51B3DE9060024636B /* ViewController.m */; };
 		BAF482BE1B3DE9060024636B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF482BC1B3DE9060024636B /* LaunchScreen.xib */; };
 		BAF482CA1B3DE9070024636B /* FoodieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF482C91B3DE9070024636B /* FoodieTests.m */; };
 		BAF482D41B3DECA00024636B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF482D31B3DECA00024636B /* MapKit.framework */; };
@@ -210,8 +208,6 @@
 		B15C3EA81B434CA700828803 /* RandomRestaurantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomRestaurantViewController.m; sourceTree = "<group>"; };
 		B15C3EA91B434CA700828803 /* SpexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpexViewController.h; sourceTree = "<group>"; };
 		B15C3EAA1B434CA700828803 /* SpexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpexViewController.m; sourceTree = "<group>"; };
-		B15C3EAB1B434CA700828803 /* WhiteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteViewController.h; sourceTree = "<group>"; };
-		B15C3EAC1B434CA700828803 /* WhiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteViewController.m; sourceTree = "<group>"; };
 		B15C3EB01B434CAD00828803 /* ModalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalTableViewController.h; sourceTree = "<group>"; };
 		B15C3EB11B434CAD00828803 /* ModalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalTableViewController.m; sourceTree = "<group>"; };
 		B15C3EB21B434CAD00828803 /* RandomRestaurantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomRestaurantViewController.h; sourceTree = "<group>"; };
@@ -224,8 +220,8 @@
 		B15C3EBD1B434CB100828803 /* YelpAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YelpAPI.h; path = "cocoa-oauth/YelpAPI.h"; sourceTree = "<group>"; };
 		B15C3EBE1B434CB100828803 /* YelpAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YelpAPI.m; path = "cocoa-oauth/YelpAPI.m"; sourceTree = "<group>"; };
 		B15C3EC91B434D1000828803 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		B15C3ECB1B434EA600828803 /* NSURLRequest_GCOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLRequest_GCOAuth.h; sourceTree = "<group>"; };
-		B15C3ECC1B434EA600828803 /* NSURLRequest_GCOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLRequest_GCOAuth.m; sourceTree = "<group>"; };
+		B15C3ECB1B434EA600828803 /* NSURLRequest_GCOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSURLRequest_GCOAuth.h; path = ../NSURLRequest_GCOAuth.h; sourceTree = "<group>"; };
+		B15C3ECC1B434EA600828803 /* NSURLRequest_GCOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSURLRequest_GCOAuth.m; path = ../NSURLRequest_GCOAuth.m; sourceTree = "<group>"; };
 		B175E3F31B41E8FE00800DE3 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		B175E3F41B41E8FE00800DE3 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		B175E3F71B4219E300800DE3 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
@@ -240,8 +236,6 @@
 		BAF482AF1B3DE9060024636B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BAF482B11B3DE9060024636B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BAF482B21B3DE9060024636B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BAF482B41B3DE9060024636B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BAF482B51B3DE9060024636B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BAF482BD1B3DE9060024636B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BAF482C31B3DE9060024636B /* FoodieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF482C81B3DE9060024636B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -279,6 +273,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B46948D1B4F87E6004E86D1 /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				B175E3F31B41E8FE00800DE3 /* Message.h */,
+				B175E3F41B41E8FE00800DE3 /* Message.m */,
+				B14C71871B41CAA20098257A /* MessagingViewController.h */,
+				B14C71881B41CAA20098257A /* MessagingViewController.m */,
+			);
+			name = Messaging;
+			sourceTree = "<group>";
+		};
+		6B46948E1B4F87F9004E86D1 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				B175E4011B425F7F00800DE3 /* User.h */,
+				B175E4021B425F7F00800DE3 /* User.m */,
+				B157F82D1B431E42005CEF29 /* GroupsTableViewController.h */,
+				B157F82E1B431E42005CEF29 /* GroupsTableViewController.m */,
+				B157F82A1B430C12005CEF29 /* MakeGroupTableViewController.h */,
+				B157F82B1B430C12005CEF29 /* MakeGroupTableViewController.m */,
+				B157F82F1B431E42005CEF29 /* Group.m */,
+				B157F8301B431E42005CEF29 /* Group.h */,
+			);
+			name = Groups;
+			sourceTree = "<group>";
+		};
+		6B4694901B4F8839004E86D1 /* Yelp */ = {
+			isa = PBXGroup;
+			children = (
+				B15C3EBB1B434CB100828803 /* Yelp.h */,
+				B15C3EBC1B434CB100828803 /* Yelp.m */,
+				B15C3EBD1B434CB100828803 /* YelpAPI.h */,
+				B15C3EBE1B434CB100828803 /* YelpAPI.m */,
+			);
+			name = Yelp;
+			sourceTree = "<group>";
+		};
+		6B4694921B4F884D004E86D1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B15C3EB01B434CAD00828803 /* ModalTableViewController.h */,
+				B15C3EB11B434CAD00828803 /* ModalTableViewController.m */,
+				B15C3EA81B434CA700828803 /* RandomRestaurantViewController.m */,
+				B15C3EB21B434CAD00828803 /* RandomRestaurantViewController.h */,
+				B15C3EA91B434CA700828803 /* SpexViewController.h */,
+				B15C3EAA1B434CA700828803 /* SpexViewController.m */,
+				B157F8251B42F8C7005CEF29 /* LoginViewController.h */,
+				B157F8261B42F8C7005CEF29 /* LoginViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		B14C70DA1B41CA300098257A /* JSQMessagesViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -446,18 +492,13 @@
 				B15C3EB61B434CB100828803 /* GCOAuth.m */,
 				B15C3EB71B434CB100828803 /* NSData+Base64.h */,
 				B15C3EB81B434CB100828803 /* NSData+Base64.m */,
+				B15C3ECB1B434EA600828803 /* NSURLRequest_GCOAuth.h */,
+				B15C3ECC1B434EA600828803 /* NSURLRequest_GCOAuth.m */,
 			);
 			path = "cocoa-oauth";
 			sourceTree = "<group>";
 		};
 		B175E3F61B41F99A00800DE3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BAF482A11B3DE9060024636B = {
 			isa = PBXGroup;
 			children = (
 				B175E3F91B4219EB00800DE3 /* FBSDKLoginKit.framework */,
@@ -473,6 +514,13 @@
 				B14C70CE1B41C3410098257A /* Firebase.framework */,
 				BAF482D51B3DEF4F0024636B /* CoreLocation.framework */,
 				BAF482D31B3DECA00024636B /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAF482A11B3DE9060024636B = {
+			isa = PBXGroup;
+			children = (
 				B175E3F61B41F99A00800DE3 /* Frameworks */,
 				BAF482AC1B3DE9060024636B /* Foodie */,
 				BAF482C61B3DE9060024636B /* FoodieTests */,
@@ -493,39 +541,13 @@
 			isa = PBXGroup;
 			children = (
 				B15C3EB41B434CB100828803 /* cocoa-oauth */,
-				B15C3EB01B434CAD00828803 /* ModalTableViewController.h */,
-				B15C3ECB1B434EA600828803 /* NSURLRequest_GCOAuth.h */,
-				B15C3ECC1B434EA600828803 /* NSURLRequest_GCOAuth.m */,
-				B15C3EBB1B434CB100828803 /* Yelp.h */,
-				B15C3EBC1B434CB100828803 /* Yelp.m */,
-				B15C3EBD1B434CB100828803 /* YelpAPI.h */,
-				B15C3EBE1B434CB100828803 /* YelpAPI.m */,
-				B15C3EB11B434CAD00828803 /* ModalTableViewController.m */,
-				B15C3EB21B434CAD00828803 /* RandomRestaurantViewController.h */,
-				B15C3EA81B434CA700828803 /* RandomRestaurantViewController.m */,
-				B15C3EA91B434CA700828803 /* SpexViewController.h */,
-				B15C3EAA1B434CA700828803 /* SpexViewController.m */,
-				B15C3EAB1B434CA700828803 /* WhiteViewController.h */,
-				B15C3EAC1B434CA700828803 /* WhiteViewController.m */,
-				B157F82D1B431E42005CEF29 /* GroupsTableViewController.h */,
-				B157F82E1B431E42005CEF29 /* GroupsTableViewController.m */,
-				B157F82F1B431E42005CEF29 /* Group.m */,
-				B157F8301B431E42005CEF29 /* Group.h */,
+				6B4694921B4F884D004E86D1 /* ViewControllers */,
+				6B4694901B4F8839004E86D1 /* Yelp */,
+				6B46948D1B4F87E6004E86D1 /* Messaging */,
+				6B46948E1B4F87F9004E86D1 /* Groups */,
 				B15C3EC91B434D1000828803 /* Main.storyboard */,
-				B157F82A1B430C12005CEF29 /* MakeGroupTableViewController.h */,
-				B157F82B1B430C12005CEF29 /* MakeGroupTableViewController.m */,
-				B157F8251B42F8C7005CEF29 /* LoginViewController.h */,
-				B157F8261B42F8C7005CEF29 /* LoginViewController.m */,
-				B14C71871B41CAA20098257A /* MessagingViewController.h */,
-				B14C71881B41CAA20098257A /* MessagingViewController.m */,
-				B175E4011B425F7F00800DE3 /* User.h */,
-				B175E4021B425F7F00800DE3 /* User.m */,
-				B175E3F31B41E8FE00800DE3 /* Message.h */,
-				B175E3F41B41E8FE00800DE3 /* Message.m */,
 				BAF482B11B3DE9060024636B /* AppDelegate.h */,
 				BAF482B21B3DE9060024636B /* AppDelegate.m */,
-				BAF482B41B3DE9060024636B /* ViewController.h */,
-				BAF482B51B3DE9060024636B /* ViewController.m */,
 				B1F2B45F1B435CF700469721 /* Images.xcassets */,
 				BAF482BC1B3DE9060024636B /* LaunchScreen.xib */,
 				BAF482AD1B3DE9060024636B /* Supporting Files */,
@@ -682,7 +704,6 @@
 				B14C71441B41CA300098257A /* JSQMessagesBubbleImageFactory.m in Sources */,
 				B15C3EAD1B434CA700828803 /* RandomRestaurantViewController.m in Sources */,
 				B14C715A1B41CA300098257A /* JSQMessagesInputToolbar.m in Sources */,
-				BAF482B61B3DE9060024636B /* ViewController.m in Sources */,
 				B14C71771B41CA740098257A /* JSQSystemSoundPlayer.m in Sources */,
 				B14C71451B41CA300098257A /* JSQMessagesMediaViewBubbleImageMasker.m in Sources */,
 				B14C71461B41CA300098257A /* JSQMessagesTimestampFormatter.m in Sources */,
@@ -721,7 +742,6 @@
 				B14C714E1B41CA300098257A /* JSQMessagesAvatarImage.m in Sources */,
 				BAF482B01B3DE9060024636B /* main.m in Sources */,
 				B14C71571B41CA300098257A /* JSQMessagesCollectionViewCellOutgoing.m in Sources */,
-				B15C3EAF1B434CA700828803 /* WhiteViewController.m in Sources */,
 				B14C71391B41CA300098257A /* JSQSystemSoundPlayer+JSQMessages.m in Sources */,
 				B14C71431B41CA300098257A /* JSQMessagesAvatarImageFactory.m in Sources */,
 				B157F8321B431E42005CEF29 /* Group.m in Sources */,
