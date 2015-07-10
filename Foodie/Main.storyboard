@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="y29-E3-l1e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ja3-S8-zJW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -213,13 +213,15 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LX1-bf-P3w" id="HgC-oo-B30">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xmr-iu-VWX">
+                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xmr-iu-VWX">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="342.5"/>
                                                 </mapView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="xmr-iu-VWX" secondAttribute="trailing" constant="-8" id="cWQ-fJ-V0Y"/>
-                                                <constraint firstItem="xmr-iu-VWX" firstAttribute="leading" secondItem="HgC-oo-B30" secondAttribute="leadingMargin" constant="-8" id="gYf-2y-OCy"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="xmr-iu-VWX" secondAttribute="trailing" constant="-8" id="5wP-Zk-0pP"/>
+                                                <constraint firstItem="xmr-iu-VWX" firstAttribute="leading" secondItem="HgC-oo-B30" secondAttribute="leadingMargin" constant="-8" id="ML8-JB-kVx"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="xmr-iu-VWX" secondAttribute="bottom" constant="-8" id="cvn-iI-TAO"/>
+                                                <constraint firstItem="xmr-iu-VWX" firstAttribute="top" secondItem="HgC-oo-B30" secondAttribute="topMargin" constant="-8" id="sou-yb-mLe"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -289,8 +291,8 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7xA-7p-6zK" id="pkB-qs-sNo">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2f8-Hn-JVw">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2f8-Hn-JVw">
+                                                    <rect key="frame" x="0.0" y="12" width="375" height="32"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <state key="normal" title="Get Directions">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -335,42 +337,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ly-vz-OXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2519.5" y="-394.5"/>
-        </scene>
-        <!--Login View Controller-->
-        <scene sceneID="i5N-VZ-rIE">
-            <objects>
-                <viewController id="y29-E3-l1e" customClass="LoginViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="r7n-td-Gzl"/>
-                        <viewControllerLayoutGuide type="bottom" id="MHa-0M-nYC"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4jN-EL-cyC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYR-mj-fW5">
-                                <rect key="frame" x="277" y="285" width="38" height="30"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="loginPressed:" destination="y29-E3-l1e" eventType="touchUpInside" id="tx7-zF-Svx"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="wYR-mj-fW5" secondAttribute="centerX" constant="4" id="9r5-qg-KHF"/>
-                            <constraint firstAttribute="centerY" secondItem="wYR-mj-fW5" secondAttribute="centerY" id="w2g-De-6pr"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <segue destination="rhs-Hb-5RB" kind="show" identifier="loginCompleteSegue" id="jeD-Lh-oBN"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WUw-Pk-73x" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-607" y="-400"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7ol-Ss-9ue">
@@ -494,10 +460,90 @@
             </objects>
             <point key="canvasLocation" x="1536.5" y="-394.5"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="fAF-ju-0fY">
+            <objects>
+                <viewController id="Ja3-S8-zJW" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ExI-F3-OYu"/>
+                        <viewControllerLayoutGuide type="bottom" id="fcM-v0-KEj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BEP-tB-rGn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="lAK-X3-jnH">
+                                <rect key="frame" x="0.0" y="0.0" width="616" height="600"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 The Mexicans. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Iih-Dd-1I4">
+                                <rect key="frame" x="80" y="563" width="441" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title_2x" translatesAutoresizingMaskIntoConstraints="NO" id="6NU-I2-TEv" userLabel="foodie">
+                                <rect key="frame" x="175" y="113" width="251" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="cws-PA-23z"/>
+                                    <constraint firstAttribute="width" constant="251" id="ylS-VL-s7u"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solve your mealtime indecision with one click." lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLv-Jf-d1y">
+                                <rect key="frame" x="133" y="289" width="334.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYR-mj-fW5">
+                                <rect key="frame" x="182" y="441" width="235" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="235" id="i1X-cl-yuP"/>
+                                    <constraint firstAttribute="height" constant="39" id="nE3-bQ-ckI"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="facebook_login_3x">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="facebook_login_pressed"/>
+                                <connections>
+                                    <action selector="loginPressed:" destination="Ja3-S8-zJW" eventType="touchUpInside" id="Zp5-0F-jac"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="SLv-Jf-d1y" secondAttribute="centerY" constant="0.5" id="5ts-pE-3VZ"/>
+                            <constraint firstItem="6NU-I2-TEv" firstAttribute="top" secondItem="ExI-F3-OYu" secondAttribute="bottom" constant="93" id="Dpq-rA-Rcq"/>
+                            <constraint firstItem="lAK-X3-jnH" firstAttribute="leading" secondItem="BEP-tB-rGn" secondAttribute="leadingMargin" constant="-16" id="F9c-le-GyT"/>
+                            <constraint firstAttribute="centerX" secondItem="SLv-Jf-d1y" secondAttribute="centerX" constant="-0.5" id="HCR-8u-eWt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Iih-Dd-1I4" secondAttribute="trailing" constant="63" id="Sqw-tF-EbN"/>
+                            <constraint firstItem="Iih-Dd-1I4" firstAttribute="leading" secondItem="BEP-tB-rGn" secondAttribute="leadingMargin" constant="64" id="TyE-oY-p5n"/>
+                            <constraint firstItem="fcM-v0-KEj" firstAttribute="top" secondItem="lAK-X3-jnH" secondAttribute="bottom" id="Yyr-Gk-ygD"/>
+                            <constraint firstItem="Iih-Dd-1I4" firstAttribute="top" secondItem="wYR-mj-fW5" secondAttribute="bottom" constant="83" id="fP2-Ef-C4Q"/>
+                            <constraint firstAttribute="centerX" secondItem="wYR-mj-fW5" secondAttribute="centerX" id="fnK-we-WfJ"/>
+                            <constraint firstAttribute="centerX" secondItem="6NU-I2-TEv" secondAttribute="centerX" constant="-0.5" id="hia-xN-1Uj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lAK-X3-jnH" secondAttribute="trailing" constant="-32" id="oqi-ei-lIN"/>
+                            <constraint firstItem="fcM-v0-KEj" firstAttribute="top" secondItem="Iih-Dd-1I4" secondAttribute="bottom" constant="20.5" id="tc1-na-TDQ"/>
+                            <constraint firstItem="lAK-X3-jnH" firstAttribute="top" secondItem="BEP-tB-rGn" secondAttribute="topMargin" id="xZy-6j-Hfx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="rhs-Hb-5RB" kind="show" identifier="loginCompleteSegue" id="Msp-Qj-6el"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z6e-Ii-zWs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-587" y="-400"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="background" width="4128" height="2716"/>
+        <image name="facebook_login_3x" width="1425" height="219"/>
+        <image name="facebook_login_pressed" width="1500" height="381"/>
+        <image name="title_2x" width="770" height="206"/>
+    </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="diL-87-3c3"/>
         <segue reference="EJv-gG-Y2K"/>
         <segue reference="7vJ-0Q-3Lo"/>
-        <segue reference="diL-87-3c3"/>
     </inferredMetricsTieBreakers>
 </document>
