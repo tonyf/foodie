@@ -11,7 +11,7 @@
 
 @interface YelpAPI : NSObject
 
-- (void)queryRandomBusinessInfoForTerm:(NSString *)term location:(NSString *)location completionHandler:(void (^)(Yelp *yp, NSError *error))completionHandler;
+- (void)queryRandomBusinessInfoForTerm:(NSString *)term location:(NSString *)location radius_filter:(NSString *)radius_filter completionHandler:(void (^)(Yelp *yp, NSError *error))completionHandler;
 
 
 @end

@@ -20,6 +20,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *ratingImageView;
 @property (nonatomic) CLLocation *userLocation;
 @property (nonatomic, strong) NSString *cuisine;
+@property (nonatomic) BOOL ready;
+@property (nonatomic) BOOL hasResults;
 
 @property NSString *groupID;
 @end
