@@ -32,8 +32,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    while(!self.name) {
+    while(!self.address) {
         sleep(0.1);
+    }
+    
+    NSLog(@"%d", self.hasResults);
+    
+    if(!self.hasResults) {
+        /* UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Results Found"
+                                                        message:@"Please try different search terms."
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show]; */
+        [self dismissViewControllerAnimated:YES completion:nil];
+        return;
     }
 
     self.navigationItem.title = self.name;

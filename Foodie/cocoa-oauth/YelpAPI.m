@@ -18,10 +18,10 @@ static NSString * const kSearchLimit       = @"20";
 
 @implementation YelpAPI
 
-- (void)queryRandomBusinessInfoForTerm:(NSString *)term location:(NSString *)location completionHandler:(void (^)(Yelp *yp, NSError *error))completionHandler {
+- (void)queryRandomBusinessInfoForTerm:(NSString *)term location:(NSString *)location radius_filter:(NSString *)radius_filter completionHandler:(void (^)(Yelp *yp, NSError *error))completionHandler {
     
     //Make a first request to get the search results with the passed term and location
-    NSURLRequest *searchRequest = [self _searchRequestWithTerm:term location:location];
+    NSURLRequest *searchRequest = [self _searchRequestWithTerm:term location:location radius_filter:radius_filter];
     NSURLSession *session = [NSURLSession sharedSession];
     [[session dataTaskWithRequest:searchRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         
@@ -88,11 +88,12 @@ static NSString * const kSearchLimit       = @"20";
  
  @return The NSURLRequest_GCOAuth needed to perform the search
  */
-- (NSURLRequest_GCOAuth *)_searchRequestWithTerm:(NSString *)term location:(NSString *)location {
+- (NSURLRequest_GCOAuth *)_searchRequestWithTerm:(NSString *)term location:(NSString *)location radius_filter:(NSString *)radius_filter {
     NSDictionary *params = @{
                              @"term": term,
                              @"location": location,
-                             @"limit": kSearchLimit
+                             @"limit": kSearchLimit,
+                             @"radius_filter": radius_filter
                              };
     
     return [NSURLRequest_GCOAuth requestWithHost:kAPIHost path:kSearchPath params:params];
