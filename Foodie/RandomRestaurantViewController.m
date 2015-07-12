@@ -32,20 +32,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    while(!self.address) {
+    while(!self.ready) {
         sleep(0.1);
     }
     
     NSLog(@"%d", self.hasResults);
     
     if(!self.hasResults) {
-        /* UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Results Found"
-                                                        message:@"Please try different search terms."
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Results Found"
+                                                        message:@"Please try again."
                                                        delegate:self
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
-        [alert show]; */
-        [self dismissViewControllerAnimated:YES completion:nil];
+        [alert show];
+        [self.navigationController popViewControllerAnimated:YES];
         return;
     }
 

@@ -76,14 +76,13 @@
             if (error) {
                 NSLog(@"An error happened during the request: %@", error);
             } else if (yp) {
+                destVC.hasResults = YES;
                 destVC.address = yp.address;
                 destVC.name = yp.name;
                 destVC.ratingImage = yp.ratingImage;
                 destVC.userLocation = self.userLocation;
                 destVC.cuisine = yp.cuisine;
                 destVC.ready = YES;
-                destVC.hasResults = YES;
-
             } else {
                 NSLog(@"No business was found");
                 destVC.hasResults = NO;
